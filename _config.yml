@@ -24,9 +24,9 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Ajinkya Naik"
   pronouns         : # example: "he/him"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Project Assistant at IUCAA | Part III maths graduate from the University of Cambridge | Interested in research problems in exoplanet science."
   location         : "Pune, India"
   employer         : "Inter-University Centre for Astronomy & Astrophysics (IUCAA)"
   uri              : # URL
