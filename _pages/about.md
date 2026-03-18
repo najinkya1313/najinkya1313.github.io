@@ -9,7 +9,7 @@ redirect_from:
 
 Hi, I'm Ajinkya. 
 
-I am currently working as a Project Assistant at the Astronomy Center for Educators (ACE), a division of the Inter-University Centre for Astronomy & Astrophysics (IUCAA) in Pune, India. At ACE, we work on developing a range of accessible astronomy-themed experiments and pedagogical materials for teachers and students with the goal of training them in astronomy research. Find out more about the center and our work here. 
+I am currently working as a Project Assistant at the Astronomy Center for Educators (ACE), a division of the Inter-University Centre for Astronomy & Astrophysics (IUCAA) in Pune, India. At ACE, we work on developing a range of accessible astronomy-themed experiments and pedagogical materials for teachers and students with the goal of training them in astronomy research. Find out more about the center and our work [here](https://ace.iucaa.in/). 
 
 I have completed my undergraduate studies in physics at Abasaheb Garware College (affiliated to the University of Pune), followed by a master's in theoretical physics (famously known as Part III Maths) at the Department of Applied Mathematics & Theoretical Physics (DAMTP), University of Cambridge. After my master's, I have worked for two months as part of a summer research programme at the Institute of Astronomy (IoA) in Cambridge before joining IUCAA. 
 
