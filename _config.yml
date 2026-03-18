@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-IN"
-site_theme               : "contrast" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "sunrise" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Ajinkya Naik"
 title_separator          : "-"
 name                     : &name "Ajinkya"
@@ -28,7 +28,8 @@ author:
   pronouns         : # example: "he/him"  
   bio              : "Project Assistant at IUCAA | Part III maths graduate from the University of Cambridge | Interested in research problems in exoplanet science."
   location         : "Pune, India"
-  employer         : "Inter-University Centre for Astronomy & Astrophysics (IUCAA)"
+  employer         : "Inter-University Centre for 
+                    Astronomy & Astrophysics (IUCAA)"
   uri              : # URL
   email            : "najinkya1313@gmail.com" 
 
