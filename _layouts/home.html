@@ -1,0 +1,30 @@
+---
+layout: compress
+---
+
+{% include base_path %}
+
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+    <link rel="stylesheet" href="{{ base_path }}/assets/css/home.css">
+  </head>
+
+  <body>
+    {% include browser-upgrade.html %}
+
+    <header id="hero">
+      <h1>Ajinkya J. Naik</h1>
+    </header>
+    <div id="hero-spacer"></div>
+
+    <main id="home-content">
+      {{ content }}
+    </main>
+
+    {% include scripts.html %}
+    <script src="{{ base_path }}/assets/js/home.js"></script>
+  </body>
+</html>
