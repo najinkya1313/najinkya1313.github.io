@@ -1,0 +1,32 @@
+:root { --hero-full: 100vh; --hero-min: 22vh; }
+body { margin: 0; }
+
+#hero {
+  position: fixed; top: 0; left: 0; right: 0;
+  height: var(--hero-full);
+  background: url('/images/hero.jpg') center 30% / cover no-repeat;
+  display: flex; align-items: flex-end; justify-content: center;
+  z-index: 10; overflow: hidden;
+}
+#hero::after {               /* darkens the photo so text is readable */
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(transparent 40%, rgba(0,0,0,.55));
+}
+#hero h1 {
+  position: relative; z-index: 1; color: #fff; margin: 0 0 .6em;
+  font-size: clamp(1.6rem, 5vw, 3.5rem); letter-spacing: .03em;
+}
+
+#hero-spacer { height: var(--hero-full); }   /* the space the hero "occupies" */
+#home-content { position: relative; z-index: 1; background: #fff;
+                max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+
+#cards { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 3rem; perspective: 800px; }
+.card {
+  flex: 1 1 200px; height: 160px; border-radius: 12px;
+  display: grid; place-items: center; font-size: 1.4rem; text-decoration: none;
+  color: #fff; background: #1f2a44 center / cover;
+  transition: transform .15s ease-out, box-shadow .15s;
+  box-shadow: 0 4px 12px rgba(0,0,0,.2);
+}
+.card:hover { box-shadow: 0 12px 28px rgba(0,0,0,.35); }
