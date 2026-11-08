@@ -1647,3 +1647,12 @@ button {
 	body.is-preload #footer {
 		opacity: 0;
 	}
+
+    /* Circular profile headshot */
+    .profile-pic img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+}
