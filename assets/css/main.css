@@ -1146,7 +1146,7 @@ button {
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 		/* We can change the background image here. */
 		background-image: url("../../images/exoplanet_zoo.jpg");
-		background-position: center 75%;
+		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
 		/* This sets the order of rendering. This will sit behind all elements with z-index > 1 */
