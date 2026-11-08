@@ -1,105 +1,152 @@
 
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research | Ajinkya Naik</title>
+    <title>Research | Ajinkya J. Naik</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Original Dimension theme -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Research page layout -->
     <link rel="stylesheet" href="assets/css/research.css">
+
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css">
+    </noscript>
 </head>
 
-<body>
+<body class="research-page">
 
-    <header class="site-header">
-        <a href="index.html" class="home-link">Ajinkya J. Naik</a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="research.html" class="current">Research</a>
-            <a href="gallery.html">Gallery</a>
-        </nav>
-    </header>
+    <!-- Original website background -->
+    <div id="bg"></div>
 
-    <main class="container">
+    <div class="research-site">
 
-        <section class="page-heading">
-            <h1>Research</h1>
+        <!-- Navigation -->
+        <header class="research-header">
+            <a href="index.html" class="site-name">Ajinkya J. Naik</a>
+
+            <nav class="research-nav">
+                <a href="index.html">Home</a>
+                <a href="research.html" class="current">Research</a>
+                <a href="gallery.html">Gallery</a>
+            </nav>
+        </header>
+
+
+        <!-- Main content -->
+        <main class="research-container">
+
+            <section class="research-intro">
+                <h1>Research</h1>
+
+                <p>
+                    My research interests lie in exoplanet science,
+                    computational astrophysics and the development
+                    of statistical methods for astronomical data
+                    analysis. I am particularly interested in
+                    understanding the formation, structure and
+                    evolution of planetary systems through
+                    observations and physical modelling.
+                </p>
+            </section>
+
+
+            <!-- Project 1 -->
+            <section class="research-project">
+
+                <div class="project-text">
+
+                    <span class="project-category">
+                        01 &nbsp; / &nbsp; COMPUTATIONAL ASTROPHYSICS
+                    </span>
+
+                    <h2>Bayesian Time-Series Analysis</h2>
+
+                    <p>
+                        I developed NestAR, a Bayesian framework
+                        for ARIMA model selection using nested
+                        sampling. Implemented in JAX and BlackJAX,
+                        the framework combines time-series modelling
+                        with Bayesian evidence estimation to compare
+                        competing models. I explored its application
+                        to astronomical variability and stellar
+                        light curves, including Kepler observations.
+                    </p>
+
+                    <div class="project-links">
+                        <a href="https://github.com/najinkya1313/NestAR"
+                           target="_blank" rel="noopener noreferrer">
+                            GitHub Repository ↗
+                        </a>
+
+                        <a href="https://arxiv.org/abs/2512.01929"
+                           target="_blank" rel="noopener noreferrer">
+                            arXiv Paper ↗
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="project-image">
+                    <img src="images/nestar.jpg"
+                         alt="Astronomical time-series analysis">
+                </div>
+
+            </section>
+
+
+            <!-- Project 2 -->
+            <section class="research-project">
+
+                <div class="project-text">
+
+                    <span class="project-category">
+                        02 &nbsp; / &nbsp; EXOPLANET MODELLING
+                    </span>
+
+                    <h2>Exoplanet Interior and Atmosphere Modelling</h2>
+
+                    <p>
+                        My current research involves developing
+                        self-consistent models of planetary interiors
+                        and atmospheres, with a focus on sub-Neptune
+                        planets. The framework connects the physical
+                        properties of planetary cores, mantles,
+                        volatile layers and gaseous envelopes with
+                        atmospheric structure and evolution. An
+                        important long-term goal is to connect
+                        forward physical models with the
+                        interpretation of exoplanet observations.
+                    </p>
+
+                </div>
+
+                <div class="project-image">
+                    <img src="images/planet_model.jpg"
+                         alt="Exoplanet interior and atmosphere modelling">
+                </div>
+
+            </section>
+
+
+            <!-- Add further projects by copying a research-project section -->
+
+        </main>
+
+
+        <!-- Footer -->
+        <footer class="research-footer">
             <p>
-                My research interests lie at the intersection of
-                observational exoplanet science, computational
-                astrophysics and planetary modelling.
+                &copy; Ajinkya J. Naik.
+                Design: <a href="https://html5up.net">HTML5 UP</a>.
             </p>
-        </section>
+        </footer>
 
-        <!-- PROJECT 1 -->
-        <section class="project">
-            <div class="project-text">
-                <span class="project-number">01 / TIME-SERIES ANALYSIS</span>
-                <h2>Bayesian Time-Series Analysis</h2>
-                <p>
-                    I developed NestAR, a Bayesian framework for
-                    ARIMA model selection using nested sampling.
-                    The framework combines vectorised time-series
-                    modelling with Bayesian evidence estimation,
-                    with applications to astronomical variability
-                    and the analysis of stellar light curves.
-                </p>
-                <a href="https://github.com/najinkya1313/NestAR"
-                   target="_blank">GitHub Repository →</a>
-            </div>
-
-            <div class="project-image">
-                <img src="images/nestar.jpg"
-                     alt="Astronomical time-series analysis">
-            </div>
-        </section>
-
-        <!-- PROJECT 2 -->
-        <section class="project">
-            <div class="project-text">
-                <span class="project-number">02 / PLANETARY MODELLING</span>
-                <h2>Exoplanet Interior and Atmosphere Modelling</h2>
-                <p>
-                    I work on self-consistent models of planetary
-                    interiors and atmospheres, investigating the
-                    structural and evolutionary properties of
-                    sub-Neptune planets. The broader goal is to
-                    connect physical models of planetary interiors
-                    and atmospheres with observable properties.
-                </p>
-            </div>
-
-            <div class="project-image">
-                <img src="images/planet_model.jpg"
-                     alt="Exoplanet interior and atmosphere model">
-            </div>
-        </section>
-
-        <!-- PROJECT 3 -->
-        <section class="project">
-            <div class="project-text">
-                <span class="project-number">03 / OBSERVATIONAL ASTROPHYSICS</span>
-                <h2>Observational Exoplanet Science</h2>
-                <p>
-                    My interests include the detection and
-                    characterisation of exoplanets through
-                    astronomical time-series data, particularly
-                    methods for distinguishing planetary signals
-                    from stellar variability and instrumental
-                    systematics.
-                </p>
-            </div>
-
-            <div class="project-image">
-                <img src="images/exoplanet_transit.jpg"
-                     alt="Exoplanet transit light curve">
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        © Ajinkya J. Naik
-    </footer>
+    </div>
 
 </body>
 </html>
