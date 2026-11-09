@@ -1656,3 +1656,35 @@ button {
         object-fit: cover;
         object-position: center;
 }
+/* =========================================
+   READABILITY PANELS
+   ========================================= */
+
+/* Name and introductory text */
+#header .content {
+    background: rgba(65, 70, 75, 0.72);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 0.5rem;
+}
+
+/* Navigation blocks: About Me, Research, Gallery, Contact */
+#header nav ul {
+    background: rgba(65, 70, 75, 0.78);
+    border-radius: 5px;
+}
+
+/* Content cards */
+#main article {
+    background: rgba(55, 60, 65, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Smooth hover effect on navigation */
+#header nav ul li a {
+    transition: background-color 0.2s ease;
+}
+
+#header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
