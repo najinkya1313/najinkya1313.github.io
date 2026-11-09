@@ -176,6 +176,16 @@ body.research-page #bg {
     border-radius: 4px;
 }
 
+/* Kepler-17: preserve original aspect ratio and avoid cropping */
+
+.project-image img.kepler-image {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
 
 /* Footer */
 
@@ -228,5 +238,12 @@ body.research-page #bg {
 
     .project-image img {
         height: 220px;
+    }
+
+    /* Keep Kepler-17 uncropped on mobile too */
+    .project-image img.kepler-image {
+        width: auto;
+        height: auto;
+        max-width: 100%;
     }
 }
