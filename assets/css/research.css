@@ -176,11 +176,12 @@ body.research-page #bg {
     border-radius: 4px;
 }
 
-/* Kepler-17: preserve original aspect ratio and avoid cropping */
+/* Kepler-17: display complete image without cropping */
 
 .project-image img.kepler-image {
-    width: auto;
-    height: auto;
+    display: block;
+    width: 100%;
+    height: auto !important;
     max-width: 100%;
     object-fit: contain;
     margin: 0 auto;
@@ -240,10 +241,12 @@ body.research-page #bg {
         height: 220px;
     }
 
-    /* Keep Kepler-17 uncropped on mobile too */
+    /* Kepler-17: retain full aspect ratio on mobile */
+
     .project-image img.kepler-image {
-        width: auto;
-        height: auto;
+        width: 100%;
+        height: auto !important;
         max-width: 100%;
+        object-fit: contain;
     }
 }
