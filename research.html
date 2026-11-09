@@ -62,14 +62,13 @@
                     <h2>Bayesian Time-Series Analysis</h2>
 
                     <p>
-                        I developed NestAR, a Bayesian framework
-                        for ARIMA model selection using nested
-                        sampling. Implemented in JAX and BlackJAX,
-                        the framework combines time-series modelling
-                        with Bayesian evidence estimation to compare
-                        competing models. I explored its application
-                        to astronomical variability and stellar
-                        light curves, including Kepler observations.
+                        Autoregressive Integrated Moving Average (ARIMA) models are a powerful suite of models which were traditionally used in finance
+                        and stock price forecasting. We characterize a single model by the respective order of each component -- AR(p), MA(q) and the differencing 
+                        order (d). How do we select the right order for any given data without overfitting? Traditional methods used heuristic criteria and modern methods
+                        use the Akaike Information Criteria (AIC) and Bayesian Information Criteria (BIC). In this aspect, I built NestAR (Nested Sampling for ARIMA, which 
+                        combines a GPU-accelerated nested sampler from blackjax with my own vectorized framework of ARIMA models. NestAR can be applied to a diverse range
+                        of astronomical time series data like sunspot number counts and stochastic variability in differnet lightcurves from Kepler and TESS.
+                        
                     </p>
 
                     <div class="project-links">
@@ -101,19 +100,10 @@
 
                     
 
-                    <h2>Exoplanet Atomsphere-Interior Modelling</h2>
+                    <h2>Exoplanet Atmosphere-Interior Modelling</h2>
 
                     <p>
-                        My current research involves developing
-                        self-consistent models of planetary interiors
-                        and atmospheres, with a focus on sub-Neptune
-                        planets. The framework connects the physical
-                        properties of planetary cores, mantles,
-                        volatile layers and gaseous envelopes with
-                        atmospheric structure and evolution. An
-                        important long-term goal is to connect
-                        forward physical models with the
-                        interpretation of exoplanet observations.
+                    
                     </p>
 
                 </div>
@@ -137,7 +127,12 @@
                     <h2>Tests of Quantum Gravity</h2>
 
                     <p>
-                        My master's essay was focused on reviewing recent proposals for testing the quantum coherent nature of gravity.
+                        In the quest of finding the ultimate quantum theory of gravity, how do we empirically establish that gravity is indeed quantized and does not
+                        exist in some semi-classical state? My master's essay reviewed some of the recent proposals for testing this quantum coherent nature of gravity.
+                        One such proposal is the Bose-Marletto-Vedral (BMV) experiment which proposes to test quantum gravity by witnessing gravitationally induced entanglement
+                        between two test masses. The experiment requires holding particles in a coherent superposition for a sufficiently long timescale, however decoherence 
+                        poses a significant barrier to this. I proposed an optimization to this experiment by asymmetric interferometric splitting of the test masses which could
+                        singificantly reduce this time requirement.
                     </p>
 
                 </div>
