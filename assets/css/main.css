@@ -1688,28 +1688,3 @@ button {
 #header nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.12);
 }
-
-#header .content .inner .contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 1.8rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    border: none;
-}
-
-#header .content .inner .contact-links li {
-    border: none;
-    padding: 0;
-}
-
-#header .content .inner .contact-links a {
-    font-size: 1.4rem;
-    opacity: 0.8;
-}
-
-#header .content .inner .contact-links a:hover {
-    opacity: 1;
-}
-
