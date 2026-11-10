@@ -7,10 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Original Dimension theme -->
     <link rel="stylesheet" href="assets/css/main.css">
-
-    <!-- Research page layout -->
     <link rel="stylesheet" href="assets/css/research.css">
 
     <noscript>
@@ -19,8 +16,6 @@
 </head>
 
 <body class="research-page">
-
-  
 
     <div class="research-site">
 
@@ -34,7 +29,6 @@
                 <a href="gallery.html">Gallery</a>
             </nav>
         </header>
-
 
         <!-- Main content -->
         <main class="research-container">
@@ -53,7 +47,6 @@
                 </p>
             </section>
 
-
             <!-- Project 1 -->
             <section class="research-project">
 
@@ -63,13 +56,12 @@
 
                     <p>
                         Autoregressive Integrated Moving Average (ARIMA) models are a powerful suite of models which were traditionally used in finance
-                        and stock price forecasting. We characterize a single model by the respective order of each component -- AR(p), MA(q) and the differencing 
+                        and stock price forecasting. We characterize a single model by the respective order of each component -- AR(p), MA(q) and the differencing
                         order (d). How do we select the right order for any given data without overfitting? Traditional methods used heuristic criteria and modern methods
                         use the Akaike Information Criteria (AIC) and Bayesian Information Criteria (BIC). These methods can under/over-estimate the Occam's penalty on model complexity against better fit.
                         To solve this, I built NestAR (Nested Sampling for ARIMA), which combines a GPU-accelerated nested sampler from blackjax with my own vectorized framework of ARIMA models to select
-                        the best ARIMA model using Bayesian evidences. NestAR can be applied to a diverse range of astronomical time series data like sunspot number counts and stochastic variability in 
+                        the best ARIMA model using Bayesian evidences. NestAR can be applied to a diverse range of astronomical time series data like sunspot number counts and stochastic variability in
                         different lightcurves from Kepler and TESS.
-                        
                     </p>
 
                     <div class="project-links">
@@ -88,47 +80,45 @@
 
                 <div class="project-image">
                     <img src="images/kepler17_fit.png"
-                         alt="Astronomical time-series analysis">
+                         alt="Kepler-17 time-series model fit"
+                         class="kepler-image">
                 </div>
 
             </section>
-
 
             <!-- Project 2 -->
             <section class="research-project">
 
                 <div class="project-text">
 
-                    
-
                     <h2>Exoplanet Atmosphere-Interior Modelling (ongoing)</h2>
 
                     <p>
-                    With future missions like the Extremely Large Telescope (ELT) and Habitable Worlds Observatory (HWO) on horizon, we might expect to
-                    robustly characterize the atmospheres of Earth-like planets in habitable zones of their host stars. It is therefore important to build
-                    detailed and self-consistent physical models of their atmosphere-interior and test them against observations. However, the atmospheres of
-                    Earth-like terrestrial planets still remain marginally detectable. Sub-Neptunes represent an observationally accessible starting point to test
-                    our modelling assumptions and physics. Presently, I am working with Prof. Liton Majumdar at NISER on building a unified and self-consistent 
-                    atmosphere-interior model for sub-Neptunes and other exotic worlds like "Hycean" (Hydrogen-rich Ocean) planets.
+                        With future missions like the Extremely Large Telescope (ELT) and Habitable Worlds Observatory (HWO) on horizon, we might expect to
+                        robustly characterize the atmospheres of Earth-like planets in habitable zones of their host stars. It is therefore important to build
+                        detailed and self-consistent physical models of their atmosphere-interior and test them against observations. However, the atmospheres of
+                        Earth-like terrestrial planets still remain marginally detectable. Sub-Neptunes represent an observationally accessible starting point to test
+                        our modelling assumptions and physics. Presently, I am working with Prof. Liton Majumdar at NISER on building a unified and self-consistent
+                        atmosphere-interior model for sub-Neptunes and other exotic worlds like "Hycean" (Hydrogen-rich Ocean) planets.
                     </p>
 
                 </div>
 
-                <div class="project-image">
+                <figure class="project-image">
                     <img src="images/subneptune.jpg"
-                         alt="Exoplanet interior and atmosphere modelling">
-                </div>
+                         alt="Artist's illustration of a sub-Neptune planet">
+
+                    <figcaption>
+                        Illustration: Mark A. Garlick.
+                    </figcaption>
+                </figure>
 
             </section>
 
-
-            <!-- Add further projects by copying a research-project section -->
-             <!-- Project 3 -->
+            <!-- Project 3 -->
             <section class="research-project">
 
                 <div class="project-text">
-
-                    
 
                     <h2>Tests of Quantum Gravity</h2>
 
@@ -136,8 +126,8 @@
                         In the quest of finding the ultimate quantum theory of gravity, how do we empirically establish that gravity is indeed quantized and does not
                         exist in some semi-classical state? My master's essay reviewed some of the recent proposals for testing this quantum coherent nature of gravity.
                         One such proposal is the Bose-Marletto-Vedral (BMV) experiment which proposes to test quantum gravity by witnessing gravitationally induced entanglement
-                        between two test masses, each in some spatial superposition state (like the ones in this animation). The experiment requires holding particles in a coherent 
-                        superposition for a sufficiently long timescale, however decoherence poses a significant barrier to this. I proposed an optimization to this experiment by 
+                        between two test masses, each in some spatial superposition state (like the ones in this animation). The experiment requires holding particles in a coherent
+                        superposition for a sufficiently long timescale, however decoherence poses a significant barrier to this. I proposed an optimization to this experiment by
                         asymmetric interferometric splitting of the test masses which I showed could singificantly reduce this time requirement.
                     </p>
 
@@ -145,13 +135,12 @@
 
                 <div class="project-image">
                     <img src="images/bmv_animated.png"
-                         alt="Exoplanet interior and atmosphere modelling">
+                         alt="Animation illustrating the BMV experiment">
                 </div>
 
             </section>
 
         </main>
-
 
         <!-- Footer -->
         <footer class="research-footer">
