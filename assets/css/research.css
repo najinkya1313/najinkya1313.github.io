@@ -10,8 +10,6 @@ body.research-page {
     height: auto;
     overflow-x: hidden;
     overflow-y: auto;
-
-    /* Dark Dimension-style background */
     background-color: #1b1f22;
 }
 
@@ -163,9 +161,11 @@ body.research-page #bg {
 /* Project images */
 
 .project-image {
+    display: block;
     width: 100%;
-    overflow: hidden;
-    border-radius: 4px;
+    min-width: 0;
+    margin: 0;
+    overflow: visible;
 }
 
 .project-image img {
@@ -176,15 +176,34 @@ body.research-page #bg {
     border-radius: 4px;
 }
 
-/* Kepler-17: display complete image without cropping */
 
-.project-image img.kepler-image {
+/* KEPLER-17 IMAGE FIX
+   Preserve the complete original image.
+   Do not crop or force a fixed height.
+*/
+
+body.research-page .project-image img.kepler-image {
     display: block;
     width: 100%;
     height: auto !important;
     max-width: 100%;
-    object-fit: contain;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center;
+    border-radius: 4px;
     margin: 0 auto;
+}
+
+
+/* Sub-Neptune image credit */
+
+.project-image figcaption {
+    display: block;
+    margin-top: 9px;
+    font-size: 0.72rem;
+    line-height: 1.5;
+    text-align: right;
+    opacity: 0.6;
 }
 
 
@@ -241,12 +260,17 @@ body.research-page #bg {
         height: 220px;
     }
 
-    /* Kepler-17: retain full aspect ratio on mobile */
+    /* Keep Kepler-17 uncropped on mobile too */
 
-    .project-image img.kepler-image {
+    body.research-page .project-image img.kepler-image {
         width: 100%;
         height: auto !important;
         max-width: 100%;
-        object-fit: contain;
+        max-height: none !important;
+        object-fit: contain !important;
+    }
+
+    .project-image figcaption {
+        font-size: 0.7rem;
     }
 }
